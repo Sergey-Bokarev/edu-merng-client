@@ -23,12 +23,15 @@ const authLink = setContext(() => {
 
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
-  // uri: 'http://localhost:5000',
   cache: new InMemoryCache()
 })
 
-export default () => (
-  <ApolloProvider client={client}>
-    <App/>
-  </ApolloProvider>
-)
+const ApolloWrapper = () => {
+  return (
+    <ApolloProvider client={client}>
+      <App/>
+    </ApolloProvider>
+  )
+}
+
+export default ApolloWrapper;

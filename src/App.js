@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Container } from 'semantic-ui-react';
 
 import { AuthProvider } from './context/auth';
-import PrivateRoute from './util/PrivateRoute';
 import SinglePost from './pages/SingelPost';
 import AuthRoute from './util/AuthRoute';
 
