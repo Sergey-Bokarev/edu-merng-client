@@ -21,7 +21,7 @@ function Register(props) {
   const [addUser, { loading }] = useMutation(REGISTER_USER, {
     update(_, { data: { login: userData } }){
       context.login(userData);
-      navigate('/');
+      navigate('https://modest-lovelace-138130.netlify.app/');
     },
     onError(err){
       setErrors(err.graphQLErrors[0].extensions.errors);
