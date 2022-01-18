@@ -9,3 +9,11 @@
   width: 400px;
   margin: auto;
 }
+
+.header {
+  word-wrap: break-word;
+}
+
+.description {
+  word-wrap: break-word;
+}
